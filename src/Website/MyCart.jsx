@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useParams } from "react-router-dom";
 const MyCart = () => {
+  axios.defaults.withCredentials=true
   var TotalAmount=0
   const notify = () => {
     toast.error("Item Removed")
