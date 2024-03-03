@@ -8,6 +8,7 @@ import Aos from "aos"
 import 'aos/dist/aos.css'
 import { useEffect, useState } from "react"
 const Login = () => {
+    axios.defaults.withCredentials=true
     const navigate=useNavigate();
     const [members,setMembers]=useState([]);
     const [user,setUser]=useState({
