@@ -9,6 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useParams } from "react-router-dom";
 const Plans = () => {
+    axios.defaults.withCredentials=true
     const [T,setT]=useState(false);
     var BULL=false;
     const [purchase,setPurchase]=useState([]);
