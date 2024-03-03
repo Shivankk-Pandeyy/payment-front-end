@@ -5,6 +5,7 @@ import axios from "axios"
 import fav from './FAVICON.png'
 import { useParams } from "react-router-dom";
 const UpdateAdmin = () => {
+  axios.defaults.withCredentials=true
   const {id}=useParams()
   const [admin,setAdmin]=useState({
     name:"",
